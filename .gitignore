@@ -1,0 +1,34 @@
+# Ignore everything by default
+*
+*/*
+
+# Track specific files and directories
+!.gitignore
+!README.md
+!Caddyfile
+!docker-compose.yml
+!turnserver.conf
+!management.json
+!setup-monitoring.sh
+!relay.env
+!zdb.env
+!zitadel.env
+
+# Track docker-compose files in subdirectories
+!*/docker-compose.yml
+
+# Track config files but not data
+!*/config.json
+!watchtower/config.json
+!wireguard-wg-easy/*.conf
+
+# Never track these regardless of pattern above
+*.log
+*.token
+*.key
+*.db
+*/data/
+*/logs/
+*/db/
+*/redis/
+*/postgres/

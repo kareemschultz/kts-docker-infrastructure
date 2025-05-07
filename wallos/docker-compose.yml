@@ -1,0 +1,19 @@
+services:
+  wallos:
+    container_name: wallos
+    image: bellamy/wallos:latest
+    expose:
+      - "80"
+    environment:
+      TZ: 'America/Guyana'
+    volumes:
+      - './db:/var/www/html/db'
+      - './logos:/var/www/html/images/uploads/logos'
+    restart: unless-stopped
+    networks:
+      - default
+      - custom_nginx_proxy_net
+
+networks:
+  custom_nginx_proxy_net:
+    external: true

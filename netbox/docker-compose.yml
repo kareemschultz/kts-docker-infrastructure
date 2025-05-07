@@ -1,0 +1,66 @@
+version: "3.7"
+services:
+  netbox-postgres:
+    image: postgres:15-alpine
+    container_name: netbox_postgres
+    hostname: netbox-postgres
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "pg_isready", "-q", "-d", "netbox", "-U", "netbox"]
+      timeout: 45s
+      interval: 10s
+      retries: 10
+    volumes:
+      - /home/kareem/docker-projects/production/netbox/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=netboxpass
+      - POSTGRES_DB=netbox
+      - POSTGRES_USER=netbox
+
+  netbox-redis:
+    image: redis:7-alpine
+    user: 1002:100
+    command: redis-server
+    container_name: netbox_redis
+    hostname: netbox-redis
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli ping || exit 1"]
+    restart: always
+    volumes:
+      - /home/kareem/docker-projects/production/netbox/redis:/data
+
+  netbox-server:
+    image: lscr.io/linuxserver/netbox:latest
+    container_name: netbox_server
+    hostname: netbox-server
+    environment:
+      - PUID=1002
+      - PGID=1002
+      - TZ=America/Guyana
+      - SUPERUSER_EMAIL=kareemschultz46@gmail.com
+      - SUPERUSER_PASSWORD=Ajay2628
+      - ALLOWED_HOST=netbox.karetechsolutions.com,127.0.0.1,localhost
+      - DB_NAME=netbox
+      - DB_USER=netbox
+      - DB_PASSWORD=netboxpass
+      - DB_HOST=netbox-postgres
+      - DB_PORT=5432
+      - REDIS_HOST=netbox-redis
+      - REDIS_PORT=6379
+      - REDIS_DB_TASK=0
+      - REDIS_DB_CACHE=1
+      - BASE_PATH= #optional
+      - REMOTE_AUTH_ENABLED= #optional
+      - REMOTE_AUTH_BACKEND= #optional
+      - REMOTE_AUTH_HEADER=HTTP_REMOTE_USER
+      - REMOTE_AUTH_AUTO_CREATE_USER= #optional
+      - REMOTE_AUTH_DEFAULT_GROUPS= #optional
+      - REMOTE_AUTH_DEFAULT_PERMISSIONS= #optional
+    volumes:
+      - /home/kareem/docker-projects/production/netbox/config:/config
+    ports:
+      - 8081:8000
+    depends_on:
+      - netbox-postgres
+      - netbox-redis
+    restart: unless-stopped

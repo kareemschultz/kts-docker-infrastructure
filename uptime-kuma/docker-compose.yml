@@ -1,0 +1,16 @@
+services:
+  uptime-kuma:
+    restart: always
+    ports:
+      - 3001:3001
+    volumes:
+      - ./uptime-kuma:/app/data    # Existing data volume
+      - /var/run/docker.sock:/var/run/docker.sock  # Docker socket for monitoring
+    container_name: uptime-kuma
+    image: louislam/uptime-kuma:latest
+    networks:
+      - nginx-proxy-manager_default
+
+networks:
+  nginx-proxy-manager_default:
+    external: true

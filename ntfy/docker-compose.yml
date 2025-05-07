@@ -1,0 +1,29 @@
+services:
+  ntfy:
+    image: binwiederhier/ntfy
+    container_name: ntfy
+    command:
+      - serve
+    environment:
+      - TZ=America/Guyana                         # Set desired timezone (Guyana)
+      - NTFY_BASE_URL=https://ntfy.karetechsolutions.com   # Set the base URL for the service
+      - NTFY_AUTH_PROFILE=/etc/ntfy/auth.yml       # Path to authentication profile
+      - NTFY_AUTH_DEFAULT_ACCESS=deny-all         # Restrict access by default
+      - NTFY_BEHIND_PROXY=true                    # Indicates it's behind a reverse proxy
+      - NTFY_ENABLE_LOGIN=true                    # Enable login functionality
+      - AUTH_FILE=/var/lib/ntfy/auth.db           # Location of the authentication database
+      - UPSTREAM_BASE_URL=https://ntfy.sh         # Upstream service URL for notifications
+    user: "1002:1002"                             # Set user and group ID for security purposes
+    volumes:
+      - ./var/cache/ntfy:/var/cache/ntfy           # Cache folder mapping
+      - ./etc/ntfy:/etc/ntfy                       # Config folder mapping
+      - ./var/lib/ntfy:/var/lib/ntfy               # Authentication DB mapping
+    ports:
+      - "8680:80"                                 # Map port 8680 on the host to 80 in the container
+    healthcheck:                                  # Optional healthcheck configuration
+      test: ["CMD-SHELL", "wget -q --tries=1 http://localhost:8680/v1/health -O - | grep -Eo '\"healthy\"\\s*:\\s*true' || exit 1"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped                       # Always restart unless manually stopped

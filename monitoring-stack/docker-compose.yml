@@ -1,0 +1,165 @@
+services:
+    speedtest-tracker:
+        image: lscr.io/linuxserver/speedtest-tracker:latest
+        restart: unless-stopped
+        container_name: speedtest-tracker
+        ports:
+            - 8085:80
+            - 8444:443
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - APP_URL=https://speedtest.karetechsolutions.com
+            - APP_KEY=base64:0vFLs8UMgh+3slkvo7JW2Y11m71SYmgQI3pi2i90oyE=
+            - DB_CONNECTION=pgsql
+            - DB_HOST=db
+            - DB_PORT=5432
+            - DB_DATABASE=speedtest_tracker
+            - DB_USERNAME=speedtest_tracker
+            - DB_PASSWORD=1qazxsw2
+        volumes:
+            - ./speedtest-tracker/config:/config
+            - ./speedtest-tracker/ssl-keys:/config/keys
+        depends_on:
+            - db
+        labels:
+            - "prometheus.io/scrape=true"
+            - "prometheus.io/port=80"
+        networks:
+            - default
+            - nginx-proxy-manager_default
+    
+    db:
+        image: postgres:17
+        restart: always
+        container_name: postgres
+        environment:
+            - POSTGRES_DB=speedtest_tracker
+            - POSTGRES_USER=speedtest_tracker
+            - POSTGRES_PASSWORD=1qazxsw2
+        volumes:
+            - speedtest-db:/var/lib/postgresql/data
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready -U speedtest_tracker -d speedtest_tracker"]
+            interval: 5s
+            retries: 5
+            timeout: 5s
+        networks:
+            - default
+    
+    influxdb:
+        image: influxdb:2.7
+        restart: unless-stopped
+        container_name: influxdb
+        ports:
+            - 8087:8086
+        environment:
+            - DOCKER_INFLUXDB_INIT_MODE=setup
+            - DOCKER_INFLUXDB_INIT_USERNAME=admin
+            - DOCKER_INFLUXDB_INIT_PASSWORD=1qazxsw2
+            - DOCKER_INFLUXDB_INIT_ORG=my-org
+            - DOCKER_INFLUXDB_INIT_BUCKET=speedtest-tracker
+            - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=my-super-secret-admin-token
+        volumes:
+            - influxdb-data:/var/lib/influxdb2
+        labels:
+            - "prometheus.io/scrape=true"
+            - "prometheus.io/port=8086"
+        networks:
+            - default
+            - nginx-proxy-manager_default
+    
+    prometheus:
+        image: prom/prometheus:latest
+        restart: unless-stopped
+        container_name: prometheus
+        ports:
+            - 9091:9090
+        volumes:
+            - ./config/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+            - prometheus-data:/prometheus
+        command:
+            - '--config.file=/etc/prometheus/prometheus.yml'
+            - '--storage.tsdb.path=/prometheus'
+            - '--web.console.libraries=/etc/prometheus/console_libraries'
+            - '--web.console.templates=/etc/prometheus/consoles'
+            - '--web.enable-lifecycle'
+        networks:
+            - default
+            - nginx-proxy-manager_default
+    
+    loki:
+        image: grafana/loki:latest
+        restart: unless-stopped
+        container_name: loki
+        ports:
+            - 3101:3100
+        volumes:
+            - ./config/loki/loki-config.yml:/etc/loki/local-config.yaml
+            - loki-data:/loki
+        command: -config.file=/etc/loki/local-config.yaml
+        networks:
+            - default
+    
+    promtail:
+        image: grafana/promtail:latest
+        restart: unless-stopped
+        container_name: promtail
+        volumes:
+            - ./config/promtail/promtail-config.yml:/etc/promtail/config.yml
+            - /var/log:/var/log
+            - /var/lib/docker/containers:/var/lib/docker/containers:ro
+        command: -config.file=/etc/promtail/config.yml
+        networks:
+            - default
+    
+    uptime-kuma:
+        image: louislam/uptime-kuma:latest
+        restart: unless-stopped
+        container_name: uptime-kuma
+        ports:
+            - 3002:3001
+        volumes:
+            - uptime-kuma-data:/app/data
+            - /var/run/docker.sock:/var/run/docker.sock
+        healthcheck:
+            test: wget --no-verbose --tries=1 --spider http://localhost:3001/api/health || exit 1
+            interval: 60s
+            retries: 5
+            timeout: 5s
+        networks:
+            - default
+            - nginx-proxy-manager_default
+    
+    grafana:
+        image: grafana/grafana:latest
+        restart: unless-stopped
+        container_name: grafana
+        ports:
+            - 3005:3000
+        environment:
+            - GF_SECURITY_ADMIN_USER=admin
+            - GF_SECURITY_ADMIN_PASSWORD=1qazxsw2
+            - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-piechart-panel,grafana-worldmap-panel
+        volumes:
+            - grafana-data:/var/lib/grafana
+        depends_on:
+            - influxdb
+            - prometheus
+            - loki
+        networks:
+            - default
+            - nginx-proxy-manager_default
+
+volumes:
+  speedtest-db:
+  influxdb-data:
+  prometheus-data:
+  loki-data:
+  grafana-data:
+  uptime-kuma-data:
+
+networks:
+  default:
+  nginx-proxy-manager_default:
+    external: true
