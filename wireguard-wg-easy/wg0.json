@@ -1,0 +1,410 @@
+{
+  "server": {
+    "privateKey": "KKbgDvI7dAN7fm92778/z86AakO3VkmPtOj8ljAV61g=",
+    "publicKey": "RliMXppOV+wSX6GMA7N8ztBIXlr3kRm5ODSX+xGR9gg=",
+    "address": "10.8.0.1"
+  },
+  "clients": {
+    "a97c421a-3380-4cdb-b72c-f41a720dd48b": {
+      "name": "Linux Server",
+      "address": "10.8.0.2",
+      "privateKey": "QO3cdQg/sDu9bThRMf2PGG9Siyt9sCuXr50KqbTJd2k=",
+      "publicKey": "3UiSnP09BlnDiSuUF0cfGLvKvsRNjISjoTo40ERsXW0=",
+      "preSharedKey": "IrT78aFhwuu49jdLP9ijv7+zxPxWXih9+9tN4RVLoEs=",
+      "createdAt": "2023-07-18T00:54:52.563Z",
+      "updatedAt": "2024-08-15T23:31:51.476Z",
+      "enabled": true
+    },
+    "76afd16d-f052-4957-9b1c-d307a841d555": {
+      "name": "Satlink PC",
+      "address": "10.8.0.3",
+      "privateKey": "2Ci5oXQG6XJ6p0/wGLqdC1azYRzWCVaT5W2vd7bQrGA=",
+      "publicKey": "CzcPap+JzSEko7HWxwNnIhB3dWtbFV03z5f0lF4+h0s=",
+      "preSharedKey": "abKJHKmp4kXb+fFmpMvzu//6psD1sLTjw+H4GMgkLrE=",
+      "createdAt": "2023-08-11T22:54:08.248Z",
+      "updatedAt": "2024-08-20T20:56:48.357Z",
+      "enabled": true
+    },
+    "53be948e-5d78-4106-90c5-31e139d716a3": {
+      "name": "TV",
+      "address": "10.8.0.19",
+      "privateKey": "YE0ums49XYERCAtWx6vN12iYxn9K7GnQ7J70LbEfc2Y=",
+      "publicKey": "Jd5ZoKC0ViHhB+a1RjQXWp2CzgGWAcJsz+kv9engCh0=",
+      "preSharedKey": "q8sQmryknbCJfkM837zQdVqL5tDsuo/9zkEPZL57vgg=",
+      "createdAt": "2023-09-19T22:31:42.972Z",
+      "updatedAt": "2024-09-08T16:43:27.358Z",
+      "enabled": true
+    },
+    "f1dd5c36-3b8f-4782-9d0e-6f75c5207694": {
+      "name": "Tariq",
+      "address": "10.8.0.24",
+      "privateKey": "yIVPkDH/rzpynlz6o/UTLRb/UNhGP/Q3zDRjPboGfVk=",
+      "publicKey": "byf/861U38gqqp2964PQ/TuG+fCJHJtf0c6bDOwq5is=",
+      "preSharedKey": "ppiklxDmvM3R/VmNzz4utYbm6nOgBlRMuDa3kuHkOIc=",
+      "createdAt": "2023-10-10T23:03:33.167Z",
+      "updatedAt": "2023-10-10T23:03:33.167Z",
+      "enabled": true
+    },
+    "8e2a8a82-d0bd-40fa-b095-aef82bd8d377": {
+      "name": "testing",
+      "address": "10.8.0.6",
+      "privateKey": "iDog8UhjmF8jJOpOl3qU5UkLtgEuNEr48OiwkIjFUm8=",
+      "publicKey": "oYyQlXIZPE8QD/yVo+9d+EaLQm/u1hGhpLHst9NWlyE=",
+      "preSharedKey": "b2pO172BVbLCXtmbJJcH6Qus+O8w1u6llLfzt8oFbIM=",
+      "createdAt": "2024-01-07T15:51:59.069Z",
+      "updatedAt": "2024-10-07T15:25:14.778Z",
+      "enabled": false
+    },
+    "c84a5656-3904-4b76-b572-c13ceb71e7cb": {
+      "name": "Kareem's Iphone",
+      "address": "10.8.0.3",
+      "privateKey": "yCw1l8cA/ndP/ePI7qP6P4ratLknKRqhjK2bWdNmUXU=",
+      "publicKey": "InA2mtqRwbXi48+eUXYCJRX+eYVqDxKu5BUD+Ei22GM=",
+      "preSharedKey": "dNcXos0aWMz/fHSgC3lhsjG7WBgLnsIYOL4+6wMc/Qg=",
+      "createdAt": "2024-01-07T15:57:21.265Z",
+      "updatedAt": "2024-09-04T23:32:21.942Z",
+      "enabled": true
+    },
+    "e8115ebd-783a-4dcc-b670-1e108748138f": {
+      "name": "JS",
+      "address": "10.8.0.5",
+      "privateKey": "SF3z45NMJ3LXXO/GgtkIz/aaMbJY32x7iMZ0tKZTBVs=",
+      "publicKey": "Y2v5ZxSGwSSsCTgg1maKUthifxXWZ/EIO+eG7r/6CDY=",
+      "preSharedKey": "kxC73ZUR7Sx4pmf/98GYo1qyWrEMZQlgEesk7TteK+4=",
+      "createdAt": "2024-01-09T18:37:25.427Z",
+      "updatedAt": "2024-01-09T19:00:38.364Z",
+      "enabled": true
+    },
+    "ac9077a6-fab0-407e-b88f-6b5135c6e393": {
+      "name": "Mark-Ruizane",
+      "address": "10.8.0.4",
+      "privateKey": "WIKhqE/9LI//ULEef2ilFaaDFKM+vxYNeVXSECTPInE=",
+      "publicKey": "GqhJ4kFm90hs253Ny6GK/ZZFbk+lQkuozbMnC3KMrHY=",
+      "preSharedKey": "a3LtmzYzp5DAhyTEgpf4eKFifmN6E1lFhxbThOyapVI=",
+      "createdAt": "2024-01-12T16:42:38.936Z",
+      "updatedAt": "2024-12-13T12:19:51.409Z",
+      "enabled": true
+    },
+    "14d09852-758e-4873-935c-16c3f3248a75": {
+      "name": "Gerard",
+      "address": "10.8.0.7",
+      "privateKey": "uEoLS3APK8mkyyrDSyS8c68qnQYn+RXOGwu/z9zWj3s=",
+      "publicKey": "unANtNO3aDGYm/JAJ4JDqAq8lMttTGCg5NCOAgUhTSE=",
+      "preSharedKey": "/05kQdU11fIqlSZ3tXK8S2+r0Lil0+wELqq1+2WUun0=",
+      "createdAt": "2024-02-05T00:00:36.555Z",
+      "updatedAt": "2024-10-23T23:33:48.184Z",
+      "enabled": true
+    },
+    "e76a8ea9-432c-4314-908e-cd818745bebd": {
+      "name": "[Leandrew] Weekes",
+      "address": "10.8.0.9",
+      "privateKey": "gH615WOHSd2OwU3L5JP0xYXdugAMW5baO/1KxhD/vVI=",
+      "publicKey": "O9bzlEUWaYQvAslicVfLj6ToKvo+lcm8yEJ4KJKZpg8=",
+      "preSharedKey": "vL26Oiyr6P0NbPGCErspOHSZPForECcg7jyduNj/Io4=",
+      "createdAt": "2024-03-19T12:28:32.103Z",
+      "updatedAt": "2024-05-12T03:14:03.073Z",
+      "enabled": true
+    },
+    "99c0d02d-6e48-4a6c-ae1e-ead0b93d48eb": {
+      "name": "Leandrew",
+      "address": "10.8.0.10",
+      "privateKey": "EFZmYVPH9Z56Oou67s8i5fj8RQTQR1B3n8C9lcTfQlM=",
+      "publicKey": "l1U6SZSvGJEW/l+pQoiHioUkjYR6cantKx1iZGjmKG4=",
+      "preSharedKey": "Pa5DlH67Dfa6EW/OORi1Wzp82Z4Aj2U84AAqtFhW5uI=",
+      "createdAt": "2024-03-21T21:57:11.012Z",
+      "updatedAt": "2024-03-21T21:57:11.012Z",
+      "enabled": true
+    },
+    "e84e3425-1ac6-4eba-acd9-e1e9abecf28a": {
+      "name": "[Leandrew] Randolph#1",
+      "address": "10.8.0.11",
+      "privateKey": "MMBfVziYLTMvFLvkji3QhbTDcE9QF4NMyhsyU57MVWY=",
+      "publicKey": "0jAuz6lMc7UqmzId7ERABbymeA6em5uQC1W7ThrFSzM=",
+      "preSharedKey": "w0HuWh2zVbEVFjnUGNMaQmDlpQ+PeWgTYVFml5v2s1c=",
+      "createdAt": "2024-03-27T17:19:37.391Z",
+      "updatedAt": "2024-05-12T03:15:01.725Z",
+      "enabled": true
+    },
+    "5d7e4bfc-8d56-40a6-8519-2bbb30122911": {
+      "name": "Mark Cameron",
+      "address": "10.8.0.13",
+      "privateKey": "gNvFKuKVdGHERcRnPHV3AMDmMdYbgNYRhiCwq3FRjV0=",
+      "publicKey": "isQmF4S/KtyX3HXaD2Ld14J1RtZ6W5C/VtQChe68elI=",
+      "preSharedKey": "bV4JtNMkSkPlikmfJbo0DI/jnDNfWhwNSWG1psBKOcM=",
+      "createdAt": "2024-04-10T20:01:38.657Z",
+      "updatedAt": "2024-04-10T20:01:38.657Z",
+      "enabled": true
+    },
+    "0d687b7a-6c24-4251-aefa-1008f62191ce": {
+      "name": "[Mark] Chigga",
+      "address": "10.8.0.14",
+      "privateKey": "MNVNLQ2TalXqFzhg1sF0T5/prObrv+p7KOoffnT2Jko=",
+      "publicKey": "paU8T3plXpEKq1tdnexnZ9s5mExrXjSvU73YVFmHP10=",
+      "preSharedKey": "I0SHdzIrvof4/xclrski+DziPHuWhc6dMRdriQ5w0ns=",
+      "createdAt": "2024-04-20T15:43:34.741Z",
+      "updatedAt": "2024-11-30T15:02:14.047Z",
+      "enabled": true
+    },
+    "95184a2e-b63f-4311-bf01-875f187c380e": {
+      "name": "jermaine",
+      "address": "10.8.0.15",
+      "privateKey": "YKwOVtXqIiqqGnMoWi/haOQ4xnOfZz/GHsu4UFqPCGI=",
+      "publicKey": "TzvKGAU+zcwxvlqlNOVT0PGPkKfkEJRs2i2bwNyMRyI=",
+      "preSharedKey": "7PQkLRz+yfluAbcPGajodtvAwNtW50FXbvO1E9s5AZ4=",
+      "createdAt": "2024-04-29T19:54:40.650Z",
+      "updatedAt": "2024-04-29T19:54:40.650Z",
+      "enabled": true
+    },
+    "b7f03d43-3c24-48cd-a1da-1cb24ed5c391": {
+      "name": "[Jermine] Redhead",
+      "address": "10.8.0.16",
+      "privateKey": "eDo4IgXEF479Mz1nyLa42q1+8r7QF+JC2Basfige+Ww=",
+      "publicKey": "66MZest/QwFvy/U9PXB0pV9JpGKcuV87Yy0JyatEI1k=",
+      "preSharedKey": "LTaktBzKIGrH192bjpwvyJg6zrosVCfEizWcWAKKjC0=",
+      "createdAt": "2024-05-09T23:03:15.916Z",
+      "updatedAt": "2024-05-09T23:06:47.201Z",
+      "enabled": true
+    },
+    "9215d588-a78b-4682-a055-0c9cae9cf4d1": {
+      "name": "Gerard James",
+      "address": "10.8.0.17",
+      "privateKey": "KJ5aS6xzzFPq+/qLQxv+ZePs3TRURdy+qJxK9ZnWrHo=",
+      "publicKey": "c3ACcoWML+cVoH+yOgCUd8ltQ73RYgqyEU+dLEHJ3Wk=",
+      "preSharedKey": "O9H04jjTbAk09eAtVDpMC7aVcxWQ8y3xgvnRxXOGaBc=",
+      "createdAt": "2024-05-30T13:41:44.940Z",
+      "updatedAt": "2024-05-30T13:41:44.940Z",
+      "enabled": true
+    },
+    "006a98d6-00ad-492b-96db-9655a50004f2": {
+      "name": "[Gerard Jmaes] William",
+      "address": "10.8.0.18",
+      "privateKey": "UL7mJGuvfpaaqymiqWSnu4/6JYRdpR/RBuVbtrPjWnI=",
+      "publicKey": "qmgCsIepqbv7PoG2VEz7avyjihRI8KOzNwijAP+iyFs=",
+      "preSharedKey": "3oha+sYzkOUV7sfCf15fks6LLdhFwSIsKROZe5ITuFk=",
+      "createdAt": "2024-05-30T13:42:21.804Z",
+      "updatedAt": "2024-05-30T13:47:57.241Z",
+      "enabled": true
+    },
+    "9605b765-756a-42a3-94f7-e006088e059b": {
+      "name": "EdgeRouter 6P",
+      "address": "10.8.0.20",
+      "privateKey": "2BiABhQSnsebkN0ZQOU6xCWLKbQfQ/BbbXJ6SNa7EWs=",
+      "publicKey": "wjBinUXxGOyGkAtBcGhLD1bE5elbrRlqc828UVK9zAQ=",
+      "preSharedKey": "Oq2ET+Ga+VCuRSjiUGGPjtcLfNoaI5DVG2PwQzqzMQ8=",
+      "createdAt": "2024-06-15T20:04:31.337Z",
+      "updatedAt": "2024-06-15T20:04:31.337Z",
+      "enabled": true
+    },
+    "5a82ce4d-6258-45c7-bf55-e7f8b4f31366": {
+      "name": "mark new client",
+      "address": "10.8.0.21",
+      "privateKey": "6APm6+xKSCWCULnqtTGv1nbemgyUMTuxt0Jh1Pb383E=",
+      "publicKey": "v3Yv0pTKmC5JYZxTIPxXpnWpSkPYI++nHghUlXXO0nY=",
+      "preSharedKey": "TTcSqA05tcEXsQ9Zlh6lws0e55T1ZNuL2EdXtCY587Y=",
+      "createdAt": "2024-07-03T21:37:55.551Z",
+      "updatedAt": "2024-07-03T21:37:55.551Z",
+      "enabled": true
+    },
+    "cb5f4607-abe9-41a8-808c-f82ec1ccb639": {
+      "name": "[Mark] Gaza",
+      "address": "10.8.0.22",
+      "privateKey": "6J/sxh86ay1G+cnYtAGnBSLjSR9i6ChvxLDC0WtrcVU=",
+      "publicKey": "PpS9re68YCxyxbex325tahmosR0G4Ujntcc8L99umnE=",
+      "preSharedKey": "DTikdRSU0OzAzCzXWs45GemjBSa+5HnO/+m+KL6A/+k=",
+      "createdAt": "2024-07-03T21:38:11.856Z",
+      "updatedAt": "2024-07-23T19:27:17.244Z",
+      "enabled": true
+    },
+    "8847a397-c88a-4869-9a44-57167f8ce5b1": {
+      "name": "rodey",
+      "address": "10.8.0.23",
+      "privateKey": "MFl8pMzexDdSwnULdqk9CG48wintMj3fkesc/s4m5FY=",
+      "publicKey": "CeuFDKG8/q0ijMu4Upi7x8ImM+VJoKx0m+FHk2c3DBk=",
+      "preSharedKey": "0+9tnycAkWPVfcFUobh9j5Pw1YGscAsn6pywBY4QbhY=",
+      "createdAt": "2024-07-29T18:34:53.005Z",
+      "updatedAt": "2024-11-08T14:12:20.854Z",
+      "enabled": true
+    },
+    "8a9f2081-10e7-4b50-98d2-d42cb42a37d2": {
+      "name": "[Rodey] Williams",
+      "address": "10.8.0.25",
+      "privateKey": "kENPRZ1rb+ZcbRa+W+Pqvr3rdSLRiXPv1+MV1lXkHHA=",
+      "publicKey": "HmGx6JQs9a0/4ZWkOPfL8Z1VwEb8pNoVfiF1shwAQTc=",
+      "preSharedKey": "hIPbVlh4HPAV8S+Ser/Yi8KRjWe3BbTTMFcnnonMcis=",
+      "createdAt": "2024-07-29T18:35:04.271Z",
+      "updatedAt": "2024-11-08T14:13:14.060Z",
+      "enabled": true
+    },
+    "de26af22-766d-49e4-8f7a-55898263f24f": {
+      "name": "shaneza site 2",
+      "address": "10.8.0.26",
+      "privateKey": "+L66sezoldEZuJXRDY/C51ja2Z8Pf/DWJnR/c8UoAGI=",
+      "publicKey": "9ziNKMJsLoY8jeoSYRj+YoY8bWMqmmNdgCclKN77zws=",
+      "preSharedKey": "YnfLzG0Pa2ar+c78HRO9O3lVT9gWZC//JlHhMfoO1R0=",
+      "createdAt": "2024-08-15T22:56:52.933Z",
+      "updatedAt": "2024-10-11T21:34:23.682Z",
+      "enabled": true
+    },
+    "21b1a37a-01fe-4185-8b82-d82e21d2764f": {
+      "name": "Troy Gordon ",
+      "address": "10.8.0.27",
+      "privateKey": "uAT0Lhlqit7PDIRw8+M8R8jx5hoSSJpIBMoIKaNIbk4=",
+      "publicKey": "tfcUeAn2X44BzObCaTR75PW5Yrn0JN9DEXYdoI7EqQk=",
+      "preSharedKey": "6bzcD+FO2XCYn8Q3ium8YUlaR5A6XwWTr0WnDSAOGGE=",
+      "createdAt": "2024-08-20T12:05:23.113Z",
+      "updatedAt": "2024-12-09T15:52:42.255Z",
+      "enabled": true
+    },
+    "00dbdbbd-4744-4c5f-b73c-2f03a8541252": {
+      "name": "Marcia New Hotspot",
+      "address": "10.8.0.8",
+      "privateKey": "AEMefrf5iB1r8FJ3mlAWGbx0C0i4XLzOS662W/KnpWc=",
+      "publicKey": "/MX2QL0O1zBddznHUsakVlq6YFPHa93ROCpsyus6Kns=",
+      "preSharedKey": "d8/l51fe2uhiG+/AOgf0JOVOziiB2Ih9KHiKATTpaYc=",
+      "createdAt": "2024-08-24T17:05:23.284Z",
+      "updatedAt": "2024-12-11T22:19:14.628Z",
+      "enabled": true
+    },
+    "da6c19bc-04f7-4304-b2b0-d6a9e472381a": {
+      "name": "satlink",
+      "address": "10.8.0.28",
+      "privateKey": "mNGad0W9hA6PKf39c9ZZVf0USySppzk2BF/rzx+C30U=",
+      "publicKey": "Fvk8fWRhZPoZ9tdau4mtaERHQbPyp2RjvdqBXsSbNSQ=",
+      "preSharedKey": "LkrFeFhM6TC6Cel9tZPgje/PD1ABjR0fRGnZMaAt14g=",
+      "createdAt": "2024-08-24T19:53:19.673Z",
+      "updatedAt": "2024-08-24T19:53:19.673Z",
+      "enabled": true
+    },
+    "05d4bb17-176e-4abc-b4a1-8c76b2cb8461": {
+      "name": "[Gerard] new client",
+      "address": "10.8.0.29",
+      "privateKey": "SAm6Bo6gEZTdc4zhCXTFQnYtRgJtoojq7mUFX2+mTVU=",
+      "publicKey": "ZZevSqNFaYeUCCgasi8RghLIGWMIMqKFuLWz84ILZwI=",
+      "preSharedKey": "pP9hsQLieAzOHRju/APtYu22MyE4oLV8y6QVu1DrEIQ=",
+      "createdAt": "2024-08-28T02:04:46.327Z",
+      "updatedAt": "2024-08-28T02:04:46.327Z",
+      "enabled": true
+    },
+    "55ff2b47-374b-4b51-a508-6aa1f33f538d": {
+      "id": "55ff2b47-374b-4b51-a508-6aa1f33f538d",
+      "name": "[Marcia] Arima Site",
+      "address": "10.8.0.30",
+      "privateKey": "CHP/9ICq1sOKod/QTOLWSdDxNfIHAht6TY/qNmWMx1o=",
+      "publicKey": "8afn0HLI4fJ+hda435lIM//N15lwt7Zfd94C8c65jh4=",
+      "preSharedKey": "K+r+k9wlQRHE7Go8psKjq/PiWinQt6L9LNP7faLxbmI=",
+      "createdAt": "2024-08-31T17:23:57.811Z",
+      "updatedAt": "2024-12-20T20:43:45.272Z",
+      "enabled": true
+    },
+    "d929e6f7-9beb-4687-9712-384262447d48": {
+      "id": "d929e6f7-9beb-4687-9712-384262447d48",
+      "name": "Stefan Hopkinson",
+      "address": "10.8.0.31",
+      "privateKey": "CMuMkf1LuNnZVOkbiciKMmEvx0WUwsmoM4BU1TiCHH8=",
+      "publicKey": "dS7my96Sl/a3+4wNoOh11HwTrxYKdxlWG9VqqMzj5g4=",
+      "preSharedKey": "CTBmkelcJ+02NPtL2yAZL3Ai+vGv0NC3y9+fKBPDQvw=",
+      "createdAt": "2024-09-04T23:14:58.534Z",
+      "updatedAt": "2024-09-05T17:52:11.386Z",
+      "enabled": true
+    },
+    "6f3d8b4b-1687-433f-afc9-d70986e98b20": {
+      "id": "6f3d8b4b-1687-433f-afc9-d70986e98b20",
+      "name": "nicolai",
+      "address": "10.8.0.33",
+      "privateKey": "uMaBRi2Db7J9eBPD4pVdjixW6kBbDjTcmXNgnDgian8=",
+      "publicKey": "AfN4oZiUqnilc+A7rNbpWTjlgqO3m28gpwM3fjRxmGw=",
+      "preSharedKey": "A5qsEG7VqwJN5GGGrMdeKfx5i+5F/keuW92q8lGbXnc=",
+      "createdAt": "2024-09-23T13:19:41.534Z",
+      "updatedAt": "2024-09-23T13:19:54.716Z",
+      "enabled": true
+    },
+    "5c2fd5e8-6c82-42e2-8d87-abc20797669a": {
+      "id": "5c2fd5e8-6c82-42e2-8d87-abc20797669a",
+      "name": "chris",
+      "address": "10.8.0.37",
+      "privateKey": "eAh5w7u24VSIY1wEFwgwIRUbfjJQLwwfowr6lzdJgVo=",
+      "publicKey": "gG9OAW3KNT3x5Gr490Ggf8RMicUxpArdafonXlPV1jg=",
+      "preSharedKey": "OvUxNfw613y1UdaBDGgd33zmUDqkXdEd41cF1FtjbtI=",
+      "createdAt": "2024-10-04T17:21:26.277Z",
+      "updatedAt": "2024-10-19T02:47:21.581Z",
+      "enabled": true
+    },
+    "f196f466-1cda-4741-a7ce-b9c0060d6922": {
+      "id": "f196f466-1cda-4741-a7ce-b9c0060d6922",
+      "name": "dev-device",
+      "address": "10.8.0.38",
+      "privateKey": "OINMeEOJgOk3lHUp+vQGLhsPrP/9Z2xTCaT209nvkXM=",
+      "publicKey": "xCu4guXsqYLhMySs+hSGwFwtbZDfc5+Chc9HpXxwLmY=",
+      "preSharedKey": "nCOc7CjQNLa0aCKUCIT8qfIwCGtqVrNAHcNr6DU0H4Q=",
+      "createdAt": "2024-10-07T15:31:18.561Z",
+      "updatedAt": "2024-10-09T22:43:00.623Z",
+      "enabled": true
+    },
+    "5a783fb7-6100-4e79-a4de-d172bf5fe5fa": {
+      "id": "5a783fb7-6100-4e79-a4de-d172bf5fe5fa",
+      "name": "wireguard",
+      "address": "10.8.0.32",
+      "privateKey": "aKleJZ04tD0y5NYB0JT9WJI+zlViBW5iDULT7AIqrW0=",
+      "publicKey": "CdwoGOhmN1pALYlYNzYl9cvvTU9tDyRFlPFoRWyFtmc=",
+      "preSharedKey": "nYm8YBg7FK5i4Otrgx6glZ65hdzWDBT/99oDv34lzLA=",
+      "createdAt": "2024-10-12T17:54:23.901Z",
+      "updatedAt": "2024-10-12T17:54:23.901Z",
+      "enabled": true
+    },
+    "2a6e3e54-00a6-4474-8d91-0a7ec2a8dab0": {
+      "id": "2a6e3e54-00a6-4474-8d91-0a7ec2a8dab0",
+      "name": "carmen",
+      "address": "10.8.0.34",
+      "privateKey": "EMCaidUAf0kP1saAjkTtBnqqP76Le73xeCBXuZFRwHs=",
+      "publicKey": "I1LM+9d7CQjI/rwEkiWofQaCHJr+xLVzxIu0uQI7jQs=",
+      "preSharedKey": "JptNe61DRfucT/GRuRTklYL4iXvles6Azh0Xswsutoc=",
+      "createdAt": "2024-11-07T18:00:31.014Z",
+      "updatedAt": "2024-11-17T22:39:29.846Z",
+      "enabled": true
+    },
+    "b59762c8-dddf-40e6-a111-6ff59681fc6d": {
+      "id": "b59762c8-dddf-40e6-a111-6ff59681fc6d",
+      "name": "[Jermaine]Natasha Fagundez",
+      "address": "10.8.0.35",
+      "privateKey": "0ChmZ2ijc6c+f9jKgCpMEYNZS8ey1P00AJB1TeR5MHc=",
+      "publicKey": "wZF4Rt+1eytJRxUG1zF/pSL9MTJRguq9pSGiAfD9k1Q=",
+      "preSharedKey": "bveH1YDMWGUzLEyuweJvtKgxjaHc99Kvkvv/xs/5t14=",
+      "createdAt": "2024-11-14T14:11:43.287Z",
+      "updatedAt": "2024-11-14T14:11:43.287Z",
+      "enabled": true
+    },
+    "86890f8d-fe1d-4117-8574-9af6e7036692": {
+      "id": "86890f8d-fe1d-4117-8574-9af6e7036692",
+      "name": "[Leandrew] Donna Reynolds",
+      "address": "10.8.0.36",
+      "privateKey": "GAu3TtFZOjmfs5Z1FAePrdeR0rWVrnJeFwlEdzTlzWM=",
+      "publicKey": "eqT6P56jsW+gRON0e/SYUcgZ452OjXtRsL9kOYOvcwE=",
+      "preSharedKey": "OCKZyMIsDmK6qoI3gZM0DF2dtMbHrDDCpeRlQQL8n1U=",
+      "createdAt": "2025-01-02T15:08:53.553Z",
+      "updatedAt": "2025-01-09T13:06:01.891Z",
+      "enabled": true
+    },
+    "455e1a0e-de95-4065-863a-8f918065b642": {
+      "id": "455e1a0e-de95-4065-863a-8f918065b642",
+      "name": "[Gerard Jmaes] Brazao",
+      "address": "10.8.0.12",
+      "privateKey": "+LiXwyefdFSpkWQQ4whvGIIIrVgKFy2cyfkPnaJcYnM=",
+      "publicKey": "B261Ept2No54hY7NZsjMK8UO+Iy8R6RwPsD+PnF8lR8=",
+      "preSharedKey": "UowptR09wYfxo71248sBrwibpJyO89xEpKMeRsjWbe0=",
+      "createdAt": "2025-01-31T13:47:37.342Z",
+      "updatedAt": "2025-01-31T13:48:31.932Z",
+      "enabled": true
+    },
+    "027ab60e-b4b9-4bcf-9fba-58f76976bbc4": {
+      "id": "027ab60e-b4b9-4bcf-9fba-58f76976bbc4",
+      "name": "[Gerard] Boyal",
+      "address": "10.8.0.39",
+      "privateKey": "8CQVYS6t3zhjBr4HIAWYnlchaW8kkqglC0lp/OaPHk8=",
+      "publicKey": "5IFeYc84CLANT6mzPdDGJbj4W3tdUkih7eL3/IGImCg=",
+      "preSharedKey": "l72e28aeqOBsrsqiw8ZQ7Snlz6oIFDRUPfmR44t5apM=",
+      "createdAt": "2025-02-22T17:03:25.008Z",
+      "updatedAt": "2025-02-22T17:03:25.008Z",
+      "enabled": true
+    }
+  }
+}
